@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+body {
+  background-color: #131316;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-top: 400px;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.tourist-destinations {
+  display: grid;
+  align-items: center;
+  place-items: center;
+  color: white;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  color: white;
+}
+.tourist-h1s {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  font-size: 55px;
+}
+.tourist-ps {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 25px;
+}
+
+.gale-image {
+  transform: scale(.7);
+}
+.olympus-image {
+  transform: scale(1.3);
+  padding-bottom: 80px;
+}
+.fossae-img {
+  transform: scale(.7);
+}
+.valles-img {
+  transform: scale(1.9);
+  padding-bottom: 100px;
+}
+.txt {
+  margin-bottom: 600px;
+  font-size: 50px;
+  align-items: center;
+}
+.body-div {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.valles-mariners {
+  margin-top: 400px;
+}

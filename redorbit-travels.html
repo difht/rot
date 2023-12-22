@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redorbit Travels</title>
+  <link rel="icon" type="image/x-icon" href="jvp/BCL-MARS-ICON.ico">
+  <link rel="stylesheet" href="css/heading.css">
+  <link rel="stylesheet" href="css/redorbit-css.css">
+  
+</head>
+<body>
+
+  <header>
+    <a href="redorbit-travels.html" class="logo">Redorbit Travels</a>
+    <ul>
+      <li class="li-buttons"><a class="individual-header-button" href="attractions.html">Attractions</a></li>      
+      <li class="li-buttons"><a class="individual-header-button" href="planet.html">Planet</a></li>
+      <li class="li-buttons"><a class="individual-header-button" href="technology.html">Technology</a></li>
+    </li>
+    <li class="li-buttons"><a class="individual-header-button" href="booking.html">Booking</a>
+    </li>
+    </ul>
+  </header>
+
+  
+  <section><div class="hidden"><div class="inv-div"><h1 class="inv-text">Chilling temperatures anyone can enjoy!</h1></div></div>
+  </section>
+
+  <div class="body-div">
+    <section class="hidden">
+      <h1 class="tourist-h1s">About</h1><p class="tourist-ps">Redorbit Travels is a travel agency created to allow curious individuals to fulfill their curiosities that are out of this world!</p></div></div>
+    </section>
+
+    <div class="body-div">
+      <section class="hidden">
+        <div class="source-editor">
+          <h1 class="tourist-h1s">Sources</h1><p>Click this link to access the sources of information when creating this website!</p> 
+          <div class="feedback-button">
+            <a class="animated-a" target="_blank" style="--clr:#1e9bff" href="https://docs.google.com/spreadsheets/d/1OiskL6uuqdsxOk_v0_2RLHWzeWBUHFIoDoJ0kVFYdgI/edit#gid=0">
+              <span >
+                  Click for HyperLink!
+              </span>
+              <i></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+    </div>
+  
+
+    <div class="body-div">
+
+      <section class="hidden">
+            <h1 class="tourist-h1s">
+              Feedback
+            </h1>
+            <p class="tourist-ps">
+              Please give feedback as well as recommendations for this website.</p>
+              <div class="feedback-button">
+                <a class="animated-a" target="_blank" style="--clr:#1e9bff" href="https://forms.gle/tASMC7UK3fR8FRgn9">
+                  <span >
+                      Click for HyperLink!
+                  </span>
+                  <i></i>
+                </a>
+              </div>
+            </div>
+      </section>
+    </div>
+    </div>
+
+
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          console.log(entry)
+          if  (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          } else {
+            entry.target.classList.remove('show');
+          }
+      });
+  });
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

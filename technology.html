@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redorbit Travels</title>
+  <link rel="icon" type="image/x-icon" href="jvp/BCL-MARS-ICON.ico">
+  <link rel="stylesheet" href="css/heading.css">
+  <link rel="stylesheet" href="css/redorbit-css.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+     }
+     
+     a {
+      text-decoration: none;
+      color: black;
+     } 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #131316
+}
+.tourist-h1s {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  font-size: 75px;
+}
+.tourist-ps {
+  margin-top: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 25px;
+}
+
+.tech-dif {
+  margin-top: 50px;
+}
+
+.inv-div {
+  color: white;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  font-size: 50px;
+} 
+.body-div {
+  margin-top: 800px;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  margin-bottom: 100px;
+  color: white;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inv-text {
+  margin-top: 350px;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.source-editor {
+  margin-right: 100px;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+.link-grid {
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+.feedback-button {
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.animated-a {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: .5s;
+}
+.animated-a:hover {
+  background: var(--clr);
+  color: var(--clr);
+  letter-spacing: .25em;
+  box-shadow: 0 0 35px var(--clr);
+}
+.animated-a:before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+.animated-a span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.animated-a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.animated-a i::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: .5s;
+}
+
+.animated-a:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+
+.animated-a i::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 20%;
+width: 10px;
+height: 4px;
+background: #27282c;
+transform: translateX(-50%) skewX(325deg);
+transition: .5s;
+}
+
+.animated-a:hover i::after {
+width: 20px;
+left: 80%;
+}
+
+.tech-button-grid {
+  margin-top: 700px;
+}
+
+
+
+
+
+
+
+&:hover { text-decoration: none; }
+
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.btn-three {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-three:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px lightblue; 
+}
+
+
+
+
+
+.btn-three {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s;
+}
+.btn-three:active::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.button-div {
+  border-width: 20px;
+  border-color: white;
+  margin-top: 1000px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.tech-parent {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  place-items: center;
+  align-items: center;
+}
+
+html, body {
+  scroll-behavior: smooth !important;
+}
+.home-button {
+  position: fixed;
+  bottom: 0;
+}
+
+#down-0 {
+  margin: 0;
+  padding: 0;
+}
+
+#down-1 {
+  position: static;
+  background-color: #888888;
+  padding: 100px;
+  margin-top: 500px;
+  padding-bottom: 300px;
+}
+#down-2 {
+  position: static;
+  background-color: #BBBBBB;
+  padding: 100px;
+  padding-bottom: 400px;
+}
+#down-3 {
+  position: static;
+  background-color: #888888;
+  padding: 100px;
+  padding-bottom: 400px;
+}
+#down-4 {
+  position: static;
+  background-color: #BBBBBB;
+  padding: 100px;
+  padding-bottom: 400px;
+}
+
+.infomain-h1-classes {
+  color: #fff;
+  font-size: 40px;}
+
+.northcap {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.contentp {
+  font-size: 25px;
+}
+.transportationinformation-div {
+  display: flex;
+  flex-direction: row;
+}
+  </style>
+</head>
+<body>
+<div id="down-0">
+
+</div>
+  <header>
+    <a href="redorbit-travels.html" class="logo">Redorbit Travels</a>
+    <ul>
+      <li class="li-buttons"><a class="individual-header-button" href="attractions.html">Attractions</a></li>      
+      <li class="li-buttons"><a class="individual-header-button" href="planet.html">Planet</a></li>
+      <li class="li-buttons"><a class="individual-header-button" href="technology.html">Technology</a></li>
+    </li>
+    <li class="li-buttons"><a class="individual-header-button" href="booking.html">Booking</a>
+    </li>
+    </ul>
+  </header>
+
+  
+  <section class="hidden"> 
+    </div>
+      <div class="inv-div">
+        <h1 class="inv-text">
+          Mars Technology
+        </h1>
+      </div>
+    </div>
+  </section>
+
+
+<div class="home-button">
+  <a href="#down-0" class="btn btn-three">
+    Home
+  </a> 
+</div>
+
+<div class="tech-parent">
+      <section class="hidden">
+        <a href="#down-1" class="btn btn-three">
+          Landing Site
+        </a> 
+      </section>
+  
+  
+      <section class="hidden">
+        <a href="#down-2" class="btn btn-three">
+          Landing Gear
+        </a> 
+      </section>
+  
+  
+      <section class="hidden">
+        <a href="#down-3" class="btn btn-three">
+          Accommodations
+        </a> 
+      </section>
+  
+  
+      <section class="hidden">
+        <a href="#down-4" class="btn btn-three">
+          Transportations
+        </a> 
+      </section>
+</div>
+
+
+  <div class="infomain-div">
+    <div id="down-1">
+        <h1 class="infomain-h1-classes">Landing Site!</h1>
+        <div class="content-grid">
+          <img class="northcap" src="jvp/northernicecap.jpg" height="400px">
+          <p class="contentp">To ensure the greatest comfort for our clients, we decided to pick a luxurious landing site near the northern polar ice cap for beautiful views and daily necessities! Our sattelites orbiting Mars will send geographic information using advanced artifical intelligience (AI) to pick the most suitable and enjoyable landing sites possible based on out client's interests and opinions!</p>
+        </div>
+    </div>
+
+
+    <div id="down-2">
+        <h1 class="infomain-h1-classes">Landing Gear!</h1>
+        <div class="content-grid">
+          <img class="northcap" src="jvp/landing-device.png" height="400px">
+          <p class="contentp">Once your luxury capsule goes into orbit on Mars, we will let the capsule break into Mars's atmosphere at the right angle and the right time. We will be using high quality heat shields to break into Mars Atmosphere. Once inside Mars's atmosphere, a parachute will help break the fall as you get ejected out of your capsule along with your mobile home with a landing device to break your fall. </p>
+        </div>
+    </div>
+
+
+    <div id="down-3">
+        <h1 class="infomain-h1-classes">Accommodations!</h1>
+        <div class="content-grid">
+          <img class="northcap" src="jvp/accomodations.png" height="500px">
+          <p class="contentp">To ensure the greatest comfort on your stay on Mars, we constructed a spacious home for your everyday activities! This accommodation is 100% environmental friendly and comes with furniture branded with our company name!</p>
+        </div>
+    </div>
+
+
+    <div id="down-4">
+        <h1 class="infomain-h1-classes">Transportations!</h1>
+        <div class="content-grid">
+          <img class="northcap" src="jvp/redorbittransportations.png" height="500px">
+          <p class="contentp">We designed many ways to scout your surroundings and to become transfixed of the beautiful sights on Mars!</p>
+
+          <div class="transportationinformation-div">
+            <div class="transportationinformation-indiv">
+              <h4>Redorbit Rover (1x)</h4>
+              <li>Solar Panels</li>
+              <li>Satellite Connection</li>
+              <li>5G Internet (one and only!)</li>
+              <li>Sturdy Wheels for terrain navigation</li>
+              <li>Backup Wheels 4x</li>
+              <li>Lights (LED)</li>
+              <li>Elevation Controls Guarenteed</li>
+            </div>
+            <div class="transportationinformation-indiv">
+              <h4>Redorbit Pathfinder Drone (4x)</h4>
+              <li>12-Hour Battery Life Guarenteed</li>
+              <li>100% Waterproof</li>
+              <li>Easy to store</li>
+              <li>Built-in LED Lights</li>
+              <li>Built-in camera</li>
+              <li>Built-in Mini Solar Panels</li>
+              <li>Propeller Protectors</li>
+            </div>
+          </div>
+
+
+
+        </div>
+    </div>    
+  </div>
+
+
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          console.log(entry)
+          if  (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          } else {
+            entry.target.classList.remove('show');
+          }
+      });
+  });
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

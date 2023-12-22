@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redorbit Travels</title>
+  <link rel="icon" type="image/x-icon" href="jvp/BCL-MARS-ICON.ico">
+  <link rel="stylesheet" href="css/heading.css">
+  <link rel="stylesheet" href="css/redorbit-css.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #131316
+}
+.tourist-h1s {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  font-size: 75px;
+}
+.tourist-ps {
+  margin-top: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 25px;
+}
+
+.tech-dif {
+  margin-top: 50px;
+}
+
+.inv-div {
+  color: white;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  font-size: 50px;
+} 
+.body-div {
+  margin-top: 800px;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  margin-bottom: 100px;
+  color: white;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.inv-text {
+  margin-top: 400px;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.source-editor {
+  margin-right: 100px;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+.link-grid {
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+.feedback-button {
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.animated-a {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: .5s;
+}
+.animated-a:hover {
+  background: var(--clr);
+  color: var(--clr);
+  letter-spacing: .25em;
+  box-shadow: 0 0 35px var(--clr);
+}
+.animated-a:before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+.animated-a span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.animated-a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.animated-a i::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: .5s;
+}
+
+.animated-a:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+
+.animated-a i::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 20%;
+width: 10px;
+height: 4px;
+background: #27282c;
+transform: translateX(-50%) skewX(325deg);
+transition: .5s;
+}
+
+.animated-a:hover i::after {
+width: 20px;
+left: 80%;
+}
+.planet-info {
+  font-size: 75px;
+  color: #fff;
+  margin-top: 600px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="redorbit-travels.html" class="logo">Redorbit Travels</a>
+    <ul>
+      <li class="li-buttons"><a class="individual-header-button" href="attractions.html">Attractions</a></li>      
+      <li class="li-buttons"><a class="individual-header-button" href="planet.html">Planet</a></li>
+      <li class="li-buttons"><a class="individual-header-button" href="technology.html">Technology</a></li>
+    </li>
+    <li class="li-buttons"><a class="individual-header-button" href="booking.html">Booking</a>
+    </li>
+    </ul>
+  </header>
+
+  
+  <section><div class="hidden"><div class="inv-div"><h1 class="inv-text">Mars Information</h1></div></div>
+  </section>
+
+  <div class="body-div">
+    <section class="hidden">
+      <h1 class="tourist-h1s">About</h1><p class="tourist-ps">Explore the the interesting information we have regarding the planet Mars!</p></div></div>
+    </section>
+
+
+    <section class="hidden">
+      <h1 class="planet-info">Planet Information</h1><p class="info-ps"></p></div></div>
+    </section>
+    <section class="hidden">
+      <img src="jvp/marsresearch.png" height="700px">
+    </section>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          console.log(entry)
+          if  (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          } else {
+            entry.target.classList.remove('show');
+          }
+      });
+  });
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

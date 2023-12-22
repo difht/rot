@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="jvp/BCL-MARS-ICON.ico">
+  <title>Redorbit Attractions</title>
+  <link rel="stylesheet" href="css/heading.css">
+  <link rel="stylesheet" href="css/attractions-css.css">
+</head>
+<body>
+  <header>
+    <a href="redorbit-travels.html" class="logo">Redorbit Travels</a>
+    <ul>
+      <li><a class="individual-header-button"href="attractions.html">Attractions</a></li>      
+      <li><a class="individual-header-button"href="planet.html">Planet</a></li>
+      <li><a class="individual-header-button"href="technology.html">Technology</a></li>
+    </li>
+    <li class="li-buttons"><a class="individual-header-button" href="booking.html">Booking</a>
+    </li>
+    </ul>
+  </header>
+  <section><div class="txt"><h1 class="hidden">Hot Tourist Destinations Everyone Loves!</h1></div></section>
+
+  
+  <div class="attraction-main">
+    <div class="body-div">
+      <section class="hidden">
+        <img class="gale-image"src="jvp/gale-crater.jpg">
+        <h1 class="tourist-h1s">Gale Crater</h1>
+        <p class="tourist-ps">The Gale Crater is 96 miles in diameter and estimated to be around 3.5-3.8 billion years old. The crater itself was named after Walter Frederick Gale, an amateur astronomer from Sydeny, Austrailia, who observed Mars from the 18th century. Mount Sharp is a mountain at the center of Gale and it rises 18,000 feet high. The Gale Crater is a hot tourist destination as it strikes curiousity in many onlookers due to this specific location potentially having the thickest exposed sections of layered sedimentary rocks in the solar system.</p>
+      </section>  
+    </div>
+
+
+    <div class="body-div">
+      <section class="hidden">
+        <img class="olympus-image" src="jvp/olympus-mons.jpg">
+        <h1 class="tourist-h1s">Olympus Mons</h1>
+        <p class="tourist-ps">The largest of the volcanoes in the Tharsis Montes region stands Olympus Mons. An extensive shield volcanoe 624km in diameter and approximately the same size as the state of Arizona. With an astonishing height of 25km, rimmed by a 6km high scarp. With a caldera located at the summit of Olympus Mons. Olympus Mons is a great place and opportunity for great explorations and exciting treks. </p>
+      </section>
+    </div>
+
+
+    <div class="body-div">
+      <section class="hidden">
+        <img class="fossae-img"src="jvp/Medusae-Fossae.jpg">
+        <h1 class="tourist-h1s">Medusae Fossae Formation</h1>
+        <p class="tourist-ps">Medusae Fossae is a great tourist destination as Medusae Fossae Formation is the single large source of dust on Mars. Medusae Fossae Formation is a large uncomfortable deposit on Mars stretching for ~5000km from 140E to 240E near the Martian equator. The Medusae Fossae Formation currently covers a large area of 2 × 10^6 km2 (equivalent to 20% the size of the contiguous USA)  </p>
+      </section>
+    </div>
+
+
+    <div class="body-div">
+      <div class="valles-mariners">
+        <section class="hidden">
+          <img class="valles-img"src="jvp/Valles-Mariners.jpg">    
+          <h1 class="tourist-h1s">Valles Mariners</h1>
+          <p class="tourist-ps">Valles Mariners, or Valles Valley, is a vast canyon arrangement that runs along the Martian equator just East of the Tharsis region. Valles Mariners is 4000km (2500 miles) long and reaches depths up to 4 miles! for comparison, the Grand Canyon on Earth is only 500 miles longand 1 mile deep. In fact, the extent of the height of Valles Mariners is as long as the United States! The Valles Mariners is a great tourist destination for those who longe daring adventures and exploring cave systems as well as diving and bungee cord jumping.</p>
+        </section>  
+      </div>
+    </div>
+  </div>
+
+
+  <section class="banner"></section>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          console.log(entry)
+          if  (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          } else {
+            entry.target.classList.remove('show');
+          }
+      });
+  });
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
